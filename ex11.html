@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let nome = prompt("Digite o nome do vendedor:");
+		let sal = parseFloat(prompt("Digite o salário fixo do vendedor:"))
+		let vendas = parseInt(prompt("Quantas vendas você fez esse mês: "))
+		 
+		let comissao = vendas * 0.15
+
+		let salfixo = sal + comissao
+
+		document.write("Nome do vendedor: " + nome) <br>
+		document.write("Salário fixo: R$" + sal.toFixed(2))
+		document.write("Salário no final do mês: R$" + salfixo.toFixed(2))
+	</script>
+</body>
+</html>
